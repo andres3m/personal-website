@@ -3,7 +3,7 @@
   overflow: hidden;
   position: fixed;
   width: 100%;
-  top: -50px; /* Initially hidden above the viewport */
+  top: -40px; /* Initially hidden above the viewport */
   z-index: 1000;
   transition: top 0.3s ease-in-out;
 }
