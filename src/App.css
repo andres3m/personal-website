@@ -12,6 +12,22 @@ section {
   background-color: #f4f4f4;
 }
 
+#home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#name-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#my-pic {
+  width: 50vh;
+}
+
 #about {
   background-color: #e2e2e2;
 }

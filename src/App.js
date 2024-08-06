@@ -10,8 +10,9 @@ function App() {
       </header>
       <section id="home">
         <div id="home-container">
-          <div>
+          <div id="name-title-container">
             <span id="name">Andres Espin</span>
+            <br/>
             <span id="job-title">Full stack Developer</span>
           </div>
           <img src={ProfilePic} id="my-pic" alt='Portrait of Andres'></img>
