@@ -5,19 +5,19 @@ html {
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
-  scroll-snap-type: y mandatory; /* Enable vertical snap scrolling */
-  height: 100vh; /* Ensure full viewport height for the container */
-  margin: 0; /* Remove default margins */
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  margin: 0;
 }
 
 section {
   padding: 100px 20px;
-  height: 100vh; /* Full viewport height for each section */
-  scroll-snap-align: start; /* Snap to the start of each section */
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
 #home {
-  background-color: #f4f4f4;
+  background-color: #E6E8E6;
 }
 
 #home-container {
@@ -30,18 +30,39 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background-color: cadetblue; */
 }
+
+#name {
+  font-size: 10vh;
+  color: transparent;
+  background-color: #3772FF;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#job-title{
+  font-size: 10vh;
+  color: #080708;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 #my-pic {
   width: 50vh;
 }
 
 #about {
-  background-color: #e2e2e2;
+  background-color: #E6E8E6;
 }
 
 #portfolio {
-  background-color: #d0d0d0;
+  background-color: #E6E8E6;
 }
 
 #projects-container {
@@ -75,5 +96,5 @@ section {
 }
 
 #contact {
-  background-color: #bebebe;
+  background-color: #E6E8E6;
 }

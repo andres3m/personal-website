@@ -37,8 +37,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar />
       </header>
+      <Navbar/>
       <section id="home" ref={(el) => (sectionRefs.current[0] = el)}>
         <div id="home-container">
           <div id="name-title-container">
