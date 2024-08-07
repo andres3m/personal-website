@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './Components/NavBar/navBar.js';
-import ProfilePic from './Assets/profilePic.png';
+import ProfilePic from './Assets/profilePic.jpg';
 import ContactForm from './Components/ContactForm/contactForm.js';
 
 function App() {
