@@ -6,6 +6,7 @@ const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        subject: '',
         message: ''
     });
 
@@ -22,7 +23,16 @@ const ContactForm = () => {
         emailjs.send('service_bf5ll1m', 'template_fdvdjn8', formData, 'QD_q3sGt_le202mDG')
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
-            }, (err) => {
+                alert("Email sent!!")
+                // Reset form after successful submission
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                });
+            },                                 
+            (err) => {
                 console.log('FAILED...', err);
             });
     };
@@ -36,6 +46,10 @@ const ContactForm = () => {
             <div>
                 <label>Email:</label>
                 <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+            </div>
+            <div>
+                <label>Subject:</label>
+                <input type="text" name="subject" value={formData.subject} onChange={handleChange} required />
             </div>
             <div>
                 <label>Message:</label>
