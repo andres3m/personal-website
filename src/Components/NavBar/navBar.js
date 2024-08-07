@@ -3,7 +3,8 @@ import './navBar.css';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('home');
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [hasClicked, setHasClicked] = useState(false);
 
   const handleScroll = () => {
     const sections = ['home', 'about', 'portfolio', 'contact'];
@@ -19,11 +20,17 @@ const Navbar = () => {
   };
 
   const handleMouseMove = (e) => {
-    if (e.clientY < 60) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
+    if (hasClicked) {
+      if (e.clientY < 60) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
     }
+  };
+
+  const handleClick = () => {
+    setHasClicked(true);
   };
 
   useEffect(() => {
@@ -33,21 +40,21 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('mousemove', handleMouseMove);
     };
-  }, []);
+  }, [hasClicked]);
 
   return (
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
       <ul className="nav-links">
-        <li className={activeLink === 'home' ? 'active' : ''}>
+        <li className={activeLink === 'home' ? 'active' : ''} onClick={handleClick}>
           <a href="#home">Home</a>
         </li>
-        <li className={activeLink === 'about' ? 'active' : ''}>
+        <li className={activeLink === 'about' ? 'active' : ''} onClick={handleClick}>
           <a href="#about">About</a>
         </li>
-        <li className={activeLink === 'portfolio' ? 'active' : ''}>
+        <li className={activeLink === 'portfolio' ? 'active' : ''} onClick={handleClick}>
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li className={activeLink === 'contact' ? 'active' : ''}>
+        <li className={activeLink === 'contact' ? 'active' : ''} onClick={handleClick}>
           <a href="#contact">Contact</a>
         </li>
       </ul>
