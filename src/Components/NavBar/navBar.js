@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './navBar.css';
 
 const Navbar = () => {
@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [hasClicked, setHasClicked] = useState(false);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const sections = ['home', 'about', 'portfolio', 'contact'];
     const offsets = sections.map(section => document.getElementById(section).offsetTop);
     const scrollPosition = window.scrollY + window.innerHeight / 2;
@@ -17,9 +17,9 @@ const Navbar = () => {
         break;
       }
     }
-  };
+  }, []);
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = useCallback((e) => {
     if (hasClicked) {
       if (e.clientY < 60) {
         setIsVisible(true);
@@ -27,7 +27,7 @@ const Navbar = () => {
         setIsVisible(false);
       }
     }
-  };
+  }, [hasClicked]);
 
   const handleClick = () => {
     setHasClicked(true);
@@ -40,7 +40,7 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('mousemove', handleMouseMove);
     };
-  }, [hasClicked]);
+  }, [handleScroll, handleMouseMove]);
 
   return (
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
