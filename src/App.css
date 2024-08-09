@@ -11,9 +11,13 @@ html {
 }
 
 section {
-  padding: 100px 20px;
+  padding: 0px 20px;
   height: 100vh;
   scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #home {
@@ -40,7 +44,7 @@ section {
   background-clip: text;
   -webkit-background-clip: text;
   font-family: "Permanent Marker", cursive;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -48,7 +52,7 @@ section {
   font-size: 10vh;
   color: #080708;
   font-family: "Permanent Marker", cursive;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -59,10 +63,12 @@ section {
 
 #about {
   background-color: #E6E8E6;
+  flex-direction: column;
 }
 
 #portfolio {
   background-color: #E6E8E6;
+  flex-direction: column;
 }
 
 #projects-container {
@@ -72,29 +78,30 @@ section {
 }
 
 #project-1 {
-  background-color: aqua;
+  background-color: #080708;
   height: 50vh;
   width: 25vh;
 }
 
 #project-2 {
-  background-color: rgb(79, 185, 185);
+  background-color: #3772FF;
   height: 50vh;
   width: 25vh;
 }
 
 #project-3 {
-  background-color: rgb(54, 107, 107);
+  background-color: #DF2935;
   height: 50vh;
   width: 25vh;
 }
 
 #project-4 {
-  background-color: rgb(7, 48, 48);
+  background-color: #FDCA40;
   height: 50vh;
   width: 25vh;
 }
 
 #contact {
   background-color: #E6E8E6;
+  flex-direction: column;
 }
