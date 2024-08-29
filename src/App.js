@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './Components/NavBar/navBar.js';
 import ProfilePic from './Assets/profilePic.jpg';
 import ContactForm from './Components/ContactForm/contactForm.js';
+import Slider from './Components/Slider/slider.js';
+
 
 function App() {
   const sectionRefs = useRef([]);
@@ -34,6 +36,39 @@ function App() {
   //   };
   // }, []);
 
+  const items = [
+    {
+      image: 'https://via.placeholder.com/300x200',
+      title: 'Tarjeta 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id purus in augue dapibus dapibus. Aliquam ante nunc, pellentesque nec augue eget, suscipit rutrum risus. Vestibulum bibendum dapibus massa. Aliquam dignissim urna enim, ac aliquam nisl tempus id. Pellentesque malesuada, ex sit amet imperdiet maximus, eros quam maximus velit, egestas pharetra ex massa a elit. Integer tempus commodo odio, vitae condimentum sapien posuere id. Quisque luctus accumsan pretium. Aliquam condimentum aliquam laoreet. In volutpat turpis felis, a suscipit tortor elementum id. Maecenas imperdiet nisi in facilisis tincidunt. Ut nec magna eu felis laoreet lacinia. Maecenas velit ex, mattis sed augue vel, dignissim malesuada orci.',
+      link: '#'
+    },
+    {
+      image: 'https://via.placeholder.com/300x200',
+      title: 'Tarjeta 2',
+      description: 'Esta es la descripción de la tarjeta 2.',
+      link: '#'
+    },
+    {
+      image: 'https://via.placeholder.com/300x200',
+      title: 'Tarjeta 3',
+      description: 'Esta es la descripción de la tarjeta 3.',
+      link: '#'
+    },
+    {
+      image: 'https://via.placeholder.com/300x200',
+      title: 'Tarjeta 4',
+      description: 'Esta es la descripción de la tarjeta 4.',
+      link: '#'
+    },
+    {
+      image: 'https://via.placeholder.com/300x200',
+      title: 'Tarjeta 5',
+      description: 'Esta es la descripción de la tarjeta 5.',
+      link: '#'
+    }
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
@@ -52,7 +87,7 @@ function App() {
       <section id="about" ref={(el) => (sectionRefs.current[1] = el)}>
           <h1>About</h1>
           <p>
-            I'm Spanish based in Birmingham. I originally studied Electronics Engineering in Spain. 
+            I'm Spanish based in Birmingham, UK. I originally studied Electronics Engineering in Spain. 
             For the past 7 years I have worked with hardware in several industries like show event, automotive, marine and aerospace.
             I enjoyed the problem solving nature of my job and the possibilities of tech. But then I was attracted by the chance of use my skills to help thousands of users through software.
             So I switched careers and learnt coding full time at School of Code. To create a full stack app in a few weeks from no coding, confirmed that this is what I really want to do.
@@ -62,12 +97,9 @@ function App() {
       </section>
       <section id="portfolio" ref={(el) => (sectionRefs.current[2] = el)}>
           <h1>Portfolio</h1>
-          <div id="projects-container">
-            <div id="project-1">Project 1</div>
-            <div id="project-2">Project 2</div>
-            <div id="project-3">Project 3</div>
-            <div id="project-4">Project 4</div>
-          </div>
+          {/* <div id="projects-container"> */}
+          <Slider items={items} />
+          {/* </div> */}
       </section>
         <section id="contact" ref={(el) => (sectionRefs.current[3] = el)}>
           <h1>Contact</h1>
