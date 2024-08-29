@@ -52,3 +52,10 @@ p {
     font-family: inherit;
     font-size: inherit;
 }
+
+#labels-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}

@@ -39,21 +39,23 @@ const ContactForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div>
-                <label>Name:</label>
-                <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-            </div>
-            <div>
-                <label>Email:</label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-            </div>
-            <div>
-                <label>Subject:</label>
-                <input type="text" name="subject" value={formData.subject} onChange={handleChange} required />
-            </div>
-            <div>
-                <label>Message:</label>
-                <textarea name="message" value={formData.message} onChange={handleChange} required />
+            <div id='labels-container'>
+                <div id='name-container'>
+                    <label>Name:</label>
+                    <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+                </div>  
+                <div id='email-container'>
+                    <label>Email:</label>
+                    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+                </div>
+                <div id='subject-container'>
+                    <label>Subject:</label>
+                    <input type="text" name="subject" value={formData.subject} onChange={handleChange} required />
+                </div>
+                <div id='message-container'>
+                    <label>Message:</label>
+                    <textarea name="message" value={formData.message} onChange={handleChange} required />
+                </div>
             </div>
             <button type="submit">Send</button>
         </form>
