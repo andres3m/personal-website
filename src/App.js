@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 import './App.css';
 import Navbar from './Components/NavBar/navBar.js';
-import ProfilePic from './Assets/profilePic.jpg';
 import ContactForm from './Components/ContactForm/contactForm.js';
 import ProjectCards from './Components/ProjectCards/projectCards.js';
+import ProfilePic from './Assets/profilePic.jpg';
+import PokemonLogo from './Assets/pokemonLogo.png';
+import ImagineriumLogo from './Assets/imagineriumLogo.png';
 
 
 function App() {
@@ -38,34 +40,39 @@ function App() {
 
   const items = [
     {
-      image: 'https://via.placeholder.com/300x200',
-      title: 'Tarjeta 1',
-      description: 'Lorem ipsum dolor sit amet,',
-      link: '#'
+      image: PokemonLogo,
+      title: 'Pokédex',
+      description: 'Static website built with HTML, CSS and Javascript. Fetching data from an API',
+      demoLink: 'https://andres3m.github.io/Pokedex/',
+      repoLink: 'https://github.com/andres3m/Pokedex'
     },
     {
-      image: 'https://via.placeholder.com/300x200',
-      title: 'Tarjeta 2',
-      description: 'Esta es la descripción de la tarjeta 2.',
-      link: '#'
+      image: ImagineriumLogo,
+      title: 'Imaginerium',
+      description: 'Character and world building app. Next.JS, next-auth, PERN.',
+      demoLink: 'https://imaginerium.netlify.app/',
+      repoLink: 'https://github.com/SchoolOfCode/bc13_final-project_front-end-room-8-boolean-hooligans',
     },
     {
       image: 'https://via.placeholder.com/300x200',
       title: 'Tarjeta 3',
       description: 'Esta es la descripción de la tarjeta 3.',
-      link: '#'
+      demoLink: '#',
+      repoLink: '#'
     },
     {
       image: 'https://via.placeholder.com/300x200',
       title: 'Tarjeta 4',
       description: 'Esta es la descripción de la tarjeta 4.',
-      link: '#'
+      demoLink: '#',
+      repoLink: '#'
     },
     {
       image: 'https://via.placeholder.com/300x200',
       title: 'Tarjeta 5',
       description: 'Esta es la descripción de la tarjeta 5.',
-      link: '#'
+      demoLink: '#',
+      repoLink: '#'
     }
   ];
 

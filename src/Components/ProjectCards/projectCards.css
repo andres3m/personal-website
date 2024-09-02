@@ -55,6 +55,12 @@
     background-color: #0056b3;
   }
 
+  .links-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
   p {
     text-wrap: balance;
   }

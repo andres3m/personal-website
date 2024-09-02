@@ -9,9 +9,14 @@ const ProjectCards = ({ items }) => {
             <img src={item.image} alt={item.title} className="project-image" />
             <h2 className="project-title">{item.title}</h2>
             <p className="project-description">{item.description}</p>
-            <a href={item.link} className="project-link" target="_blank" rel="noopener noreferrer">
-              Ver más
+            <div className='links-container'>
+            <a href={item.demoLink} className="project-link" target="_blank" rel="noopener noreferrer">
+              Demo
             </a>
+            <a href={item.repoLink} className="project-link" target="_blank" rel="noopener noreferrer">
+              Repo
+            </a>
+            </div>
           </div>
         ))}
       </div>
