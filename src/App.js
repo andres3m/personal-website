@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Components/NavBar/navBar.js';
 import ProfilePic from './Assets/profilePic.jpg';
 import ContactForm from './Components/ContactForm/contactForm.js';
-import Slider from './Components/Slider/slider.js';
+import ProjectCards from './Components/ProjectCards/projectCards.js';
 
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
     {
       image: 'https://via.placeholder.com/300x200',
       title: 'Tarjeta 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id purus in augue dapibus dapibus. Aliquam ante nunc, pellentesque nec augue eget, suscipit rutrum risus. Vestibulum bibendum dapibus massa. Aliquam dignissim urna enim, ac aliquam nisl tempus id. Pellentesque malesuada, ex sit amet imperdiet maximus, eros quam maximus velit, egestas pharetra ex massa a elit. Integer tempus commodo odio, vitae condimentum sapien posuere id. Quisque luctus accumsan pretium. Aliquam condimentum aliquam laoreet. In volutpat turpis felis, a suscipit tortor elementum id. Maecenas imperdiet nisi in facilisis tincidunt. Ut nec magna eu felis laoreet lacinia. Maecenas velit ex, mattis sed augue vel, dignissim malesuada orci.',
+      description: 'Lorem ipsum dolor sit amet,',
       link: '#'
     },
     {
@@ -97,9 +97,7 @@ function App() {
       </section>
       <section id="portfolio" ref={(el) => (sectionRefs.current[2] = el)}>
           <h1>Portfolio</h1>
-          {/* <div id="projects-container"> */}
-          <Slider items={items} />
-          {/* </div> */}
+          <ProjectCards items={items} />
       </section>
         <section id="contact" ref={(el) => (sectionRefs.current[3] = el)}>
           <h1>Contact</h1>

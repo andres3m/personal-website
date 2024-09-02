@@ -1,4 +1,4 @@
-.slider {
+.project {
     overflow-x: scroll;
     white-space: nowrap;
     padding: 20px 0;
@@ -6,7 +6,7 @@
     width: 80vw;
   }
   
-  .slider-container {
+  .projectCards-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@
     gap: 20px;
   }
   
-  .slider-card {
+  .project-card {
     display: inline-block;
     background-color: white;
     border-radius: 10px;
@@ -24,24 +24,24 @@
     text-align: center;
   }
   
-  .slider-image {
+  .project-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
   }
   
-  .slider-title {
+  .project-title {
     font-size: 1.2em;
     margin: 15px 0 10px;
   }
   
-  .slider-description {
+  .project-description {
     font-size: 0.8em;
     color: #666;
     margin-bottom: 15px;
   }
   
-  .slider-link {
+  .project-link {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -51,7 +51,7 @@
     transition: background-color 0.3s;
   }
   
-  .slider-link:hover {
+  .project-link:hover {
     background-color: #0056b3;
   }
 
