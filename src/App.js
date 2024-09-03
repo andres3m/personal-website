@@ -6,6 +6,8 @@ import ProjectCards from './Components/ProjectCards/projectCards.js';
 import ProfilePic from './Assets/profilePic.jpg';
 import PokemonLogo from './Assets/pokemonLogo.png';
 import ImagineriumLogo from './Assets/imagineriumLogo.png';
+import AcrossTheGlobeLogo from './Assets/acrossTheGlobeLogo.png';
+
 
 
 function App() {
@@ -54,25 +56,11 @@ function App() {
       repoLink: 'https://github.com/SchoolOfCode/bc13_final-project_front-end-room-8-boolean-hooligans',
     },
     {
-      image: 'https://via.placeholder.com/300x200',
-      title: 'Tarjeta 3',
-      description: 'Esta es la descripción de la tarjeta 3.',
-      demoLink: '#',
-      repoLink: '#'
-    },
-    {
-      image: 'https://via.placeholder.com/300x200',
-      title: 'Tarjeta 4',
-      description: 'Esta es la descripción de la tarjeta 4.',
-      demoLink: '#',
-      repoLink: '#'
-    },
-    {
-      image: 'https://via.placeholder.com/300x200',
-      title: 'Tarjeta 5',
-      description: 'Esta es la descripción de la tarjeta 5.',
-      demoLink: '#',
-      repoLink: '#'
+      image: AcrossTheGlobeLogo,
+      title: 'SoC Across the globe',
+      description: 'Multilingual learning resource app that displays data (with operational CRUD routes and functionality). PERN',
+      demoLink: 'https://youtu.be/mKE3oAl9YBE',
+      repoLink: 'https://github.com/andres3m/soc-across-the-globe-project'
     }
   ];
 
