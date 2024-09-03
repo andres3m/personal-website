@@ -26,18 +26,23 @@ section {
   height: auto;
 }
 
-
 #home-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Default to row layout */
   column-gap: 10vh;
+  align-items: center;
+}
+
+@media (max-width: 680px) { 
+  #home-container {
+    flex-direction: column; /* Switch to column layout on wider screens */
+  }
 }
 
 #name-title-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-color: cadetblue; */
 }
 
 #name {
@@ -60,7 +65,8 @@ section {
 }
 
 #my-pic {
-  width: 50vh;
+  width: 303.5px;
+  height: 303.5px;
 }
 
 #about {
@@ -112,6 +118,11 @@ section {
 }
 
 #home {
+  background-color: #E6E8E6;
+  justify-content: center;
+}
+
+/* #home {
   background-color: #0ae10a;
   justify-content: center;
 }
@@ -129,4 +140,4 @@ section {
 #contact {
   background-color: #ff6600;
   justify-content: center;
-}
+} */
