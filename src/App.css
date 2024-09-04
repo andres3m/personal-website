@@ -52,6 +52,15 @@ section {
   font-style: normal;
 }
 
+#contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 100px;
+}
+
 #job-title{
   font-size: 10vh;
   color: #080708;

@@ -1,6 +1,6 @@
-// ContactForm.js
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import "./contactForm.css"
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -39,24 +39,20 @@ const ContactForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div id='labels-container'>
-                <div id='name-container'>
-                    <label>Name:</label>
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-                </div>  
-                <div id='email-container'>
-                    <label>Email:</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-                </div>
-                <div id='subject-container'>
-                    <label>Subject:</label>
-                    <input type="text" name="subject" value={formData.subject} onChange={handleChange} required />
-                </div>
-                <div id='message-container'>
-                    <label>Message:</label>
-                    <textarea name="message" value={formData.message} onChange={handleChange} required />
-                </div>
-            </div>
+            <ul id='labels-container'>
+                <li id='name-container'>
+                    <input type="text" name="name" value={formData.name} placeholder='Name' onChange={handleChange} required />
+                </li>  
+                <li id='email-container'>
+                    <input type="email" name="email" value={formData.email} placeholder='Email' onChange={handleChange} required />
+                </li>
+                <li id='subject-container'>
+                    <input type="text" name="subject" value={formData.subject} placeholder='Subject' onChange={handleChange} required />
+                </li>
+                <li id='message-container'>
+                    <textarea name="message" value={formData.message} placeholder='Message' onChange={handleChange} required />
+                </li>
+            </ul>
             <button type="submit">Send</button>
         </form>
     );

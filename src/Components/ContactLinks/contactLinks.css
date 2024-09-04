@@ -1,0 +1,17 @@
+.contact-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20pt;
+    align-items: center;
+    justify-items: center;
+    width: 10%;
+  }
+  
+  
+  .contact-links-logo {
+    max-width: 5%;
+    border: none;
+    min-width: 50pt;
+  }
+  
+  

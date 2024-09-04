@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './Components/NavBar/navBar.js';
 import ContactForm from './Components/ContactForm/contactForm.js';
 import ProjectCards from './Components/ProjectCards/projectCards.js';
+import ContactLinks from './Components/ContactLinks/contactLinks.js';
+
 import ProfilePic from './Assets/profilePic.jpg';
 import PokemonLogo from './Assets/pokemonLogo.png';
 import ImagineriumLogo from './Assets/imagineriumLogo.png';
@@ -72,7 +74,7 @@ function App() {
       <section id="home" ref={(el) => (sectionRefs.current[0] = el)}>        
           <div id="home-container">
             <div id="name-title-container">
-              <span id="name">Andres Espin</span>
+              <span id="name">Andrés Espín</span>
               <br/>
               <span id="job-title">Web Developer</span>
             </div>
@@ -96,10 +98,14 @@ function App() {
       </section>
         <section id="contact" ref={(el) => (sectionRefs.current[3] = el)}>
           <h1>Contact</h1>
-          <p>
-            Thanks for making it this far! If you're still wanting to know more about me check out my GitHub page, LinkedIn, or contact me via email using the links below.
-          </p>
+        <div id="contact-container">
+          <ContactLinks/>
           <ContactForm/>
+        </div>
+        <footer>
+          <p id="footer-text">Designed & Developed By Andrés Espín - 2024</p>
+          <a id = "footer-repo-link" href="https://github.com/andres3m/personal-website">See in GitHub</a>
+        </footer>
       </section>      
     </div>
   );
