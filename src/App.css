@@ -28,16 +28,12 @@ section {
 
 #home-container {
   display: flex;
-  flex-direction: row; /* Default to row layout */
+  flex-direction: row;
   column-gap: 10vh;
+  row-gap: 5vh;
   align-items: center;
 }
 
-@media (max-width: 680px) { 
-  #home-container {
-    flex-direction: column; /* Switch to column layout on wider screens */
-  }
-}
 
 #name-title-container {
   display: flex;
@@ -120,6 +116,22 @@ section {
 #home {
   background-color: #E6E8E6;
   justify-content: center;
+}
+
+@media (max-width: 680px) { 
+  #home-container {
+    flex-direction: column;
+  }
+  #name{
+    font-size: 8vh;
+  }
+  #job-title{
+    font-size: 8vh;
+  }
+  #my-pic{
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /* #home {
