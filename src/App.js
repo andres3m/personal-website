@@ -14,55 +14,28 @@ import AcrossTheGlobeLogo from './Assets/acrossTheGlobeLogo.png';
 
 function App() {
   const sectionRefs = useRef([]);
-  
-  // useEffect(() => {
-  //   const handleScroll = (e) => {
-  //     e.preventDefault();
-  //     const scrollDirection = e.deltaY > 0 ? 'down' : 'up';
-  //     const currentSectionIndex = sectionRefs.current.findIndex(
-  //       (ref) => ref.getBoundingClientRect().top === 0
-  //     );
-
-  //     if (scrollDirection === 'down') {
-  //       const nextSectionIndex = Math.min(
-  //         currentSectionIndex + 1,
-  //         sectionRefs.current.length - 1
-  //       );
-  //       sectionRefs.current[nextSectionIndex]?.scrollIntoView({ behavior: 'smooth' });
-  //     } else {
-  //       const prevSectionIndex = Math.max(currentSectionIndex - 1, 0);
-  //       sectionRefs.current[prevSectionIndex]?.scrollIntoView({ behavior: 'smooth' });
-  //     }
-  //   };
-
-  //   window.addEventListener('wheel', handleScroll, { passive: false });
-
-  //   return () => {
-  //     window.removeEventListener('wheel', handleScroll);
-  //   };
-  // }, []);
 
   const items = [
     {
       image: PokemonLogo,
       title: 'Pokédex',
-      description: 'Static website built with HTML, CSS and Javascript. Fetching data from an API',
+      description: 'First project at School of code: a static website built using HTML, CSS, and JavaScript, featuring search functionality for Pokémon based on dynamically retrieved data from the PokéAPI. Gained experience in DOM manipulation and API integration.',
       demoLink: 'https://andres3m.github.io/Pokedex/',
       repoLink: 'https://github.com/andres3m/Pokedex'
     },
     {
-      image: ImagineriumLogo,
-      title: 'Imaginerium',
-      description: 'Character and world building app. Next.JS, next-auth, PERN.',
-      demoLink: 'https://imaginerium.netlify.app/',
-      repoLink: 'https://github.com/SchoolOfCode/bc13_final-project_front-end-room-8-boolean-hooligans',
-    },
-    {
       image: AcrossTheGlobeLogo,
       title: 'SoC Across the globe',
-      description: 'Multilingual learning resource app that displays data (with operational CRUD routes and functionality). PERN',
+      description: 'One week group project: Multilingual learning resource full-stack app featuring data management through functional CRUD operations, built using PERN stack. Gained experience handling front-end and back-end integration, data flow and testing.',
       demoLink: 'https://youtu.be/mKE3oAl9YBE',
       repoLink: 'https://github.com/andres3m/soc-across-the-globe-project'
+    },
+    {
+      image: ImagineriumLogo,
+      title: 'Imaginerium',
+      description: 'Four week group project: Character and world building full-stack app. It allows creation, edition and sharing of characters. Built with PostreSQL, Express, Node and Next.js, featuring authentication and authorisation with next-auth.',
+      demoLink: 'https://imaginerium.netlify.app/',
+      repoLink: 'https://github.com/SchoolOfCode/bc13_final-project_front-end-room-8-boolean-hooligans',
     }
   ];
 
