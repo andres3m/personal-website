@@ -99,8 +99,8 @@ function App() {
         <section id="contact" ref={(el) => (sectionRefs.current[3] = el)}>
           <h1>Contact</h1>
         <div id="contact-container">
-          <ContactLinks/>
           <ContactForm/>
+          <ContactLinks/>
         </div>
         <footer>
           <p id="footer-text">© 2024 Andres Espin</p>

@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     width: 10%;
+    margin-left: 10%;
   }
   
   .contact-links-logo {
@@ -12,6 +13,20 @@
     border: none;
     min-width: 50pt;
   }
+
+  @media (max-width: 615px) { 
+    .contact-links-container {
+      flex-direction: row;
+      margin-left: 0%;
+    }
+
+    .contact-links-logo {
+      max-width: 5%;
+      border: none;
+      min-width: 35pt;
+    }
+  }
+  
   
   div > a {
     display: flex;

@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  vertical-align: middle;
 }
 
 .App {
@@ -57,8 +58,15 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  row-gap: 20px;
-  column-gap: 20%;
+  /* row-gap: 20px; */
+  column-gap: 0%;
+}
+
+@media (max-width: 615px) { 
+  #contact-container {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 
 #job-title{
@@ -143,34 +151,12 @@ section {
   }
 }
 
-/* #home {
-  background-color: #0ae10a;
-  justify-content: center;
-}
-
-#about {
-  background-color: #1730ed;
-  justify-content: center;
-}
-
-#portfolio {
-  background-color: #d1ea12;
-  justify-content: center;
-}
-
-#contact {
-  background-color: #ff6600;
-  justify-content: center;
-} */
-
 footer {
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   font-size: 12px;
-  /* background-color: #DF2935; */
   font-family: inherit;
   text-decoration: none;
 }
@@ -180,4 +166,10 @@ footer {
   font-family: inherit;
   color: #080708;
   text-decoration: none;
+}
+
+@media (max-width: 615px) { 
+  footer {
+    padding-top: 20px;
+  }
 }
