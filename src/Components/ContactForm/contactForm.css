@@ -3,22 +3,26 @@ form {
     flex-direction: column;
     max-width: 700px;
     /* margin: 0 auto; */
-    padding: 2rem;
+    padding: 1.1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: Arial, sans-serif;
     font-size: 16px;
+    gap:20px;
 }
 
-ul {
+form > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-div {
+/* div {
     margin-bottom: 0.5rem;
-}
+} */
 
 /* label {
     display: flex;
@@ -32,7 +36,7 @@ input, textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 250px;
+    width: 350px;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -42,26 +46,27 @@ input, textarea {
 
 textarea {
     resize: none;
-    width: 250px;
+    height: 100px;
 }
-
 
 button {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 0.7rem;
-    background-color: #28a745;
-    color: white;
+    background-color: #FDCA40;
+    color: #080708;
     border: none;
     border-radius: 3px;
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
+    font-weight: 500;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #f5b400;
+    color: #080708;
 }
 
 /* p {

@@ -58,7 +58,7 @@ section {
   align-items: center;
   justify-content: center;
   row-gap: 20px;
-  column-gap: 100px;
+  column-gap: 20%;
 }
 
 #job-title{
@@ -162,3 +162,22 @@ section {
   background-color: #ff6600;
   justify-content: center;
 } */
+
+footer {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 12px;
+  /* background-color: #DF2935; */
+  font-family: inherit;
+  text-decoration: none;
+}
+
+#footer-repo-link{
+  font-size: 12px;
+  font-family: inherit;
+  color: #080708;
+  text-decoration: none;
+}

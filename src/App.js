@@ -103,8 +103,8 @@ function App() {
           <ContactForm/>
         </div>
         <footer>
-          <p id="footer-text">Designed & Developed By Andrés Espín - 2024</p>
-          <a id = "footer-repo-link" href="https://github.com/andres3m/personal-website">See in GitHub</a>
+          <p id="footer-text">© 2024 Andres Espin</p>
+          <a id = "footer-repo-link" href="https://github.com/andres3m/personal-website">See it in GitHub</a>
         </footer>
       </section>      
     </div>
