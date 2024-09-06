@@ -5,7 +5,7 @@ import ContactForm from './Components/ContactForm/contactForm.js';
 import ProjectCards from './Components/ProjectCards/projectCards.js';
 import ContactLinks from './Components/ContactLinks/contactLinks.js';
 
-import ProfilePic from './Assets/profilePic.jpg';
+import ProfilePic from './Assets/profilePic.png';
 import PokemonLogo from './Assets/pokemonLogo.png';
 import ImagineriumLogo from './Assets/imagineriumLogo.png';
 import AcrossTheGlobeLogo from './Assets/acrossTheGlobeLogo.png';
@@ -39,6 +39,14 @@ function App() {
     }
   ];
 
+      // Scroll to the contact section when the button is clicked
+      const scrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -47,16 +55,16 @@ function App() {
       <section id="home" ref={(el) => (sectionRefs.current[0] = el)}>        
           <div id="home-container">
             <div id="name-title-container">
-              <span id="name">Andrés Espín</span>
-              <br/>
-              <span id="job-title">Web Developer</span>
+              <h1 id="name">Hello, I'm Andres, Electrical and Electronics Technician turned a Softwate Developer.</h1>
+              <p id="job-title">After gaining experience in hardware troubleshooting, I decided to expand my skill set by learning coding to develop software solutions.</p>              
+              <button id="contact-button" onClick={scrollToContact}>Contact me</button>
             </div>
             <img src={ProfilePic} id="my-pic" alt='Portrait of Andres'></img>
           </div>
       </section>
       <section id="about" ref={(el) => (sectionRefs.current[1] = el)}>
           <h1>About</h1>
-          <p>
+          <p id="about-p">
             I'm Spanish based in Birmingham, UK. I originally studied Electronics Engineering in Spain. 
             For the past 7 years I have worked with hardware in several industries like show event, automotive, marine and aerospace.
             I enjoyed the problem solving nature of my job and the possibilities of tech. But then I was attracted by the chance of use my skills to help thousands of users through software.

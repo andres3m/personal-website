@@ -53,7 +53,7 @@ const ContactForm = () => {
                     <textarea name="message" value={formData.message} placeholder='Message' onChange={handleChange} required />
                 </li>
             </ul>
-            <button type="submit">Send</button>
+            <button id='submit-button' type="submit">Send</button>
         </form>
     );
 };
