@@ -21,19 +21,20 @@
 
 .nav-links a {
   display: block;
-  color: #080708;
+  color: #7b7b7b;
   text-align: center;
   padding: 8px 15px;
   text-decoration: none;
   font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
 .nav-links a:hover {
-  background-color: #ddd;
+  color: #0056b3;
 }
 
 
 .nav-links .active a {
   color: rgb(0, 0, 0);
-  font-weight: 600;
 }

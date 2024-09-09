@@ -6,7 +6,7 @@ form {
     /* margin: 0 auto; */
     padding: 1.1rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: Arial, sans-serif;
     font-size: 16px;
     gap:20px;
@@ -56,18 +56,19 @@ textarea {
     justify-content: center;
     width: 100%;
     padding: 0.7rem;
-    background-color: #FDCA40;
+    background-color: #f5b400;
     color: #080708;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
     font-weight: 500;
+    transition: 0.3s ease;
 }
 
 #submit-button:hover {
-    background-color: #f5b400;
+    background-color: #FDCA40;
     color: #080708;
 }
 

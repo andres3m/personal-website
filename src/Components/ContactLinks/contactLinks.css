@@ -12,7 +12,13 @@
     max-width: 5%;
     border: none;
     min-width: 50pt;
+    cursor: pointer;
+    transition: 0.3s ease;
   }
+
+  .contact-links-logo:hover {
+    transform: scale(1.05);
+}
 
   @media (max-width: 615px) { 
     .contact-links-container {

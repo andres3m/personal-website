@@ -25,7 +25,7 @@ function App() {
     },
     {
       image: AcrossTheGlobeLogo,
-      title: 'SoC Across the globe',
+      title: 'ATG Definitions',
       description: 'One week group project: Multilingual learning resource full-stack app featuring data management through functional CRUD operations, built using PERN stack. Gained experience handling front-end and back-end integration, data flow and testing.',
       demoLink: 'https://youtu.be/mKE3oAl9YBE',
       repoLink: 'https://github.com/andres3m/soc-across-the-globe-project'
@@ -56,7 +56,7 @@ function App() {
           <div id="home-container">
             <div id="name-title-container">
               <h1 id="name">Hello, I'm Andres, Electrical and Electronics Technician turned a Softwate Developer.</h1>
-              <p id="job-title">After gaining experience in hardware troubleshooting, I decided to expand my skill set by learning coding to develop software solutions.</p>              
+              <p id="job-title">After gaining experience working with hardware, I decided to expand my skill set by learning coding to develop software solutions.</p>              
               <button id="contact-button" onClick={scrollToContact}>Contact me</button>
             </div>
             <img src={ProfilePic} id="my-pic" alt='Portrait of Andres'></img>
@@ -74,7 +74,7 @@ function App() {
           </p>
       </section>
       <section id="portfolio" ref={(el) => (sectionRefs.current[2] = el)}>
-          <h1>Portfolio</h1>
+          <h1>Projects</h1>
           <ProjectCards items={items} />
       </section>
         <section id="contact" ref={(el) => (sectionRefs.current[3] = el)}>
