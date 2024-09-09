@@ -1,11 +1,11 @@
 .contact-links-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20pt;
     align-items: center;
     justify-content: center;
     width: 10%;
-    margin-left: 10%;
+    /* margin-left: 10%; */
   }
   
   .contact-links-logo {

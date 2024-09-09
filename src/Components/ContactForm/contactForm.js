@@ -39,6 +39,7 @@ const ContactForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
+        <h1 id="contact-title">Contact</h1>
             <ul id='labels-container'>
                 <li id='name-container'>
                     <input type="text" name="name" value={formData.name} placeholder='Name' onChange={handleChange} required />
