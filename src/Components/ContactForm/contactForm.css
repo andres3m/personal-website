@@ -25,17 +25,6 @@ form > ul {
     text-align: center;
   }
 
-/* div {
-    margin-bottom: 0.5rem;
-} */
-
-/* label {
-    display: flex;
-    margin-bottom: 0.3rem;
-    font-family: inherit;
-    font-size: inherit;
-} */
-
 input, textarea {
     display: flex;
     flex-direction: column;
@@ -76,11 +65,6 @@ textarea {
 }
 
 @media (max-width: 615px) { 
-    form {
-        /* border: none; */
-        margin-left: 0%;
-        /* box-shadow: none; */
-    }
 
     input, textarea {
         width: 300px;
@@ -91,12 +75,3 @@ textarea {
         height: 70px;
     }
 }
-
-/* #labels-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-} */
-
-

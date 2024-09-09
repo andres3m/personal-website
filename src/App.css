@@ -4,10 +4,8 @@ html {
 }
 
 .App {
-  /* text-align: center; */
   font-family: Poppins, sans-serif;
   scroll-snap-type: y mandatory;
-  /* height: 100vh; */
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -19,11 +17,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: start;
-  /* height: 100vh; */
 }
 
 #portfolio {
-  /* padding: 0px 20px; */
   scroll-snap-align: start;
   display: flex;
   align-items: center;
@@ -37,7 +33,6 @@ section {
 #home-container {
   display: flex;
   flex-direction: row;
-  /* row-gap: 5vh; */
   align-items: center;
   height: 100vh;
   width: 75vw;
@@ -55,36 +50,12 @@ section {
 }
 
 
-/* @media (min-width: 768px) {
-  #name-title-container {
-      min-width: 500px;
-  }
-} */
-
-/* #name-title-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 @media (min-width: 768px) {
   #name {
       font-size: 40px;
       line-height: 47px;
   }
 }
-
-
-/* #name {
-  font-size: 10vh;
-  color: transparent;
-  background-color: #3772FF;
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-family: "Permanent Marker", cursive;
-  font-weight: 800;
-  font-style: normal;
-} */
 
 #contact-container {
   display: flex;
@@ -110,31 +81,12 @@ section {
   line-height: 151.34%;
 }
 
-/* #job-title{
-  font-size: 10vh;
-  color: #080708;
-  font-family: "Permanent Marker", cursive;
-  font-weight: 800;
-  font-style: normal;
-} */
-
-/* #my-pic {
-  max-width: 200px;
-  max-height: 460px;
-  width: 303.5px;
-  height: 303.5px;
-  border-radius: 24px;
-  object-fit: cover;
-} */
-
 #my-pic {
   border-radius: 15px;
   margin: 10px;
   object-fit: cover;
   width: calc(100% - 40px);
   height: 40vh;
-  /* min-height: 300px;
-  max-height: 400px; */
 }
 
 @media (min-width: 768px) {
@@ -163,7 +115,6 @@ section {
   background-color: #E6E8E6;
   flex-direction: column;
   min-height: 80vh;
-  /* justify-content: start; */
 }
 
 #about-p {
@@ -180,35 +131,9 @@ section {
   justify-content: space-evenly;
 }
 
-#project-1 {
-  background-color: #080708;
-  height: 50vh;
-  width: 25vh;
-}
-
-#project-2 {
-  background-color: #3772FF;
-  height: 50vh;
-  width: 25vh;
-}
-
-#project-3 {
-  background-color: #DF2935;
-  height: 50vh;
-  width: 25vh;
-}
-
-#project-4 {
-  background-color: #FDCA40;
-  height: 50vh;
-  width: 25vh;
-}
-
 #contact {
   background-color: #E6E8E6;
   flex-direction: column;
-  /* min-height: 100vh; */
-  /* justify-content: center; */
 }
 
 #home {
@@ -235,11 +160,6 @@ footer {
   text-decoration: none;
 }
 
-/* @media (max-width: 615px) { 
-  footer {
-    padding-top: 10%;
-  }
-} */
 
 #contact-button {
   display: flex;
@@ -252,7 +172,6 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   font-family: inherit;
-  /* font-size: 0.8em; */
   font-weight: 500;
   transition: 0.3s ease;
 }
@@ -302,7 +221,3 @@ footer {
     width: 85%;
   }
 }
-
-/* #about-p {
-  box-sizing: content-box;
-} */

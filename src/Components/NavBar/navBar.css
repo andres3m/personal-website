@@ -2,9 +2,9 @@
   background-color: #E6E8E6;
   position: fixed;
   width: 100%;
-  top: 0; /* Keep the navbar at the top */
+  top: 0;
   z-index: 1000;
-  transition: none; /* Remove the sliding transition */
+  transition: none;
 }
 
 .nav-links {
@@ -33,7 +33,6 @@
 .nav-links a:hover {
   color: #0056b3;
 }
-
 
 .nav-links .active a {
   color: rgb(0, 0, 0);
