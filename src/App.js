@@ -57,7 +57,7 @@ function App() {
         <div id="home-container">
           <div id="name-title-container">
             <h1 id="name">
-              Hello, I'm Andres,
+              Hello, I'm Andrés,
               <br />
               a hardware technician turned Software Developer.
             </h1>
@@ -114,7 +114,7 @@ function App() {
         </div>
       </section>
         <footer>
-          <p id="footer-text">© 2024 Andres Espin</p>
+          <p id="footer-text">© 2024 Andrés Espín</p>
           <a
             id="footer-repo-link"
             href="https://github.com/andres3m/personal-website"
