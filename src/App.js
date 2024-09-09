@@ -76,21 +76,19 @@ function App() {
         <h1>About</h1>
         <p id="about-p">
           I'm a Spanish professional based in Birmingham, UK, with a background
-          in Electronics Engineering. Before transitioning to software
-          development, I spent 7 years working as a technician in industries
-          such as show events, automotive, marine, and aerospace. My role in
-          these industries sparked my passion for problem-solving and the
+          in Electronics Engineering. Before transitioning to software development, I spent 7 years working as a technician in industries
+          such as show events, automotive, marine, and aerospace. My role in these industries sparked my passion for problem-solving and the
           potential of technology.
           <br />
           <br />
           After discovering the world of coding, I decided to change careers and
           enrolled in the <strong>School of Code</strong> bootcamp, where I was
           selected from over 4,000 applicants. During the program, I gained
-          proficiency in JavaScript, CSS, HTML, TypeScript and Agile methodologies.
+          experience in JavaScript, CSS, HTML, TypeScript and Agile methodologies.
           <br />
           <br />
           After the bootcamp, I began my journey as a{" "}
-          <strong>Junior Software Developer (Back-end focused)</strong>, where I had the opportunity to work with technologies such as C# and .NET framework, AWS, SQL,XML
+          <strong>Junior Software Developer (Back-end focused)</strong>, where I had the opportunity to work with technologies such as C# and .NET framework, AWS, SQL and XML.
           <br />
           <br />
           I contributed to business solutions by developing a{" "}

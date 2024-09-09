@@ -23,7 +23,8 @@
     width: 300px;
     padding: 15px;
     text-align: center;
-    transition: 0.3s ease
+    transition: 0.3s ease;
+    padding: 1.1rem;
   }
 
 
@@ -39,7 +40,7 @@
   }
   
   .project-card:hover {
-    background-color: #ffe7a4;
+    background-color: #ffffff;
   }
   
   .project-card:active {

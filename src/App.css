@@ -5,7 +5,7 @@ html {
 
 .App {
   /* text-align: center; */
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   scroll-snap-type: y mandatory;
   /* height: 100vh; */
   margin: 0;
@@ -167,8 +167,9 @@ section {
 #about-p {
   width: 70%;
   font-size: 18px;
-  text-wrap: stable;
+  text-wrap: pretty;
   line-height: 30px;
+  word-break: normal;
 }
 
 #projects-container {
@@ -249,7 +250,7 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   font-family: inherit;
-  font-size: 14px;
+  /* font-size: 0.8em; */
   font-weight: 500;
   transition: 0.3s ease;
 }
@@ -266,11 +267,11 @@ footer {
   }
 
   #name{
-    font-size: 15px;
+    font-size: 0.8em;
   }
 
   #job-title{
-    font-size: 15px;
+    font-size: 0.8em;
   }
 
   #name-title-container {
@@ -294,7 +295,8 @@ footer {
   }
 
   #about-p {
-    font-size: 15px;
+    font-size: 0.8em;
+    width: 85%;
   }
 }
 
