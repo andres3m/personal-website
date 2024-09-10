@@ -39,7 +39,7 @@ section {
 }
 
 #name-title-container {
-  border-radius: 25px;
+  
   margin: 10px;
   padding: 20px;
   position: relative;
@@ -121,7 +121,7 @@ section {
   width: 70%;
   font-size: 18px;
   text-wrap: pretty;
-  line-height: 30px;
+  line-height: 151.34%;
   word-break: normal;
 }
 
@@ -196,15 +196,15 @@ footer {
   }
 
   #name-title-container {
-    order: 2;
-    border-radius: 25px;
+    order: 2;    
     margin: 10px;
-    padding: 20px;
+    padding: 0px;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    width: 100%;
   }
 
   #contact-button {
