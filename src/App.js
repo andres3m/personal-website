@@ -15,12 +15,13 @@ function App() {
 
   const items = [
     {
-      image: PokemonLogo,
-      title: "Pokédex",
+      image: ImagineriumLogo,
+      title: "Imaginerium",
       description:
-        "First project at School of code: a static website built using HTML, CSS, and JavaScript, featuring search functionality for Pokémon based on dynamically retrieved data from the PokéAPI. Gained experience in DOM manipulation and API integration.",
-      demoLink: "https://andres3m.github.io/Pokedex/",
-      repoLink: "https://github.com/andres3m/Pokedex",
+        "Four week group project: Character and world building full-stack app. It allows creation, edition and sharing of characters. Built with PostreSQL, Express, Node and Next.js, featuring authentication and authorisation with next-auth.",
+      demoLink: "https://imaginerium.netlify.app/",
+      repoLink:
+        "https://github.com/SchoolOfCode/bc13_final-project_front-end-room-8-boolean-hooligans",
     },
     {
       image: AcrossTheGlobeLogo,
@@ -31,14 +32,13 @@ function App() {
       repoLink: "https://github.com/andres3m/soc-across-the-globe-project",
     },
     {
-      image: ImagineriumLogo,
-      title: "Imaginerium",
+      image: PokemonLogo,
+      title: "Pokédex",
       description:
-        "Four week group project: Character and world building full-stack app. It allows creation, edition and sharing of characters. Built with PostreSQL, Express, Node and Next.js, featuring authentication and authorisation with next-auth.",
-      demoLink: "https://imaginerium.netlify.app/",
-      repoLink:
-        "https://github.com/SchoolOfCode/bc13_final-project_front-end-room-8-boolean-hooligans",
-    },
+        "First project at School of code: a static website built using HTML, CSS, and JavaScript, featuring search functionality for Pokémon based on dynamically retrieved data from the PokéAPI. Gained experience in DOM manipulation and API integration.",
+      demoLink: "https://andres3m.github.io/Pokedex/",
+      repoLink: "https://github.com/andres3m/Pokedex",
+    }
   ];
 
   // Scroll to the contact section when the button is clicked
@@ -59,11 +59,11 @@ function App() {
             <h1 id="name">
               Hello, I'm Andrés,
               <br />
-              a hardware technician turned Software Developer.
+              &lt; Full Stack Developer /&gt;
             </h1>
             <p id="job-title">
-              After gaining experience working with hardware,<br /> 
-              I decided to expand my skill set by learning coding to develop software solutions.
+            Leveraging 7+ years of experience in tech,<br /> 
+            I transitioned from electronics to software development, combining hands-on technical expertise with newly acquired coding skills to create software solutions to complex problems.
             </p>
             <button id="contact-button" onClick={scrollToContact}>
               Contact me
@@ -75,27 +75,24 @@ function App() {
       <section id="about" ref={(el) => (sectionRefs.current[1] = el)}>
         <h1>About</h1>
         <p id="about-p">
-          I'm a Spanish professional based in Birmingham, UK, with a background
-          in Electronics Engineering. Before transitioning to software development, I spent 7 years working as a technician in industries
-          such as show events, automotive, marine, and aerospace. My role in these industries sparked my passion for problem-solving and the
-          potential of technology.
+          I'm a bilingual <strong>Full Stack Developer</strong> based in Birmingham, UK, with two years of experience building from static websites to full-stack applications, primarily using JavaScript, Typescript, React, and Node.js.
           <br />
+          
           <br />
-          After discovering the world of coding, I decided to change careers and
-          enrolled in the <strong>School of Code</strong> bootcamp, where I was
-          selected from over 4,000 applicants. During the program, I gained
-          experience in JavaScript, CSS, HTML, TypeScript and Agile methodologies.
+          My most recent experience includes working as{" "}
+          <strong>Back-end Developer</strong>, where I implemented key software updates in .NET and C#. My role involved creating Web APIs, customizing engine configuration files to meet customer requirements, and handling testing and deployments using Azure DevOps with hosting on AWS.
           <br />
+
           <br />
-          After the bootcamp, I began my journey as a{" "}
-          <strong>Junior Software Developer (Back-end focused)</strong>, where I had the opportunity to work with technologies such as C# and .NET framework, AWS, SQL and XML.
+          I enjoy staying on the cutting edge of technology and regularly explore new tools and frameworks, such as Go, Python, Vue.js, vector databases, and integrating large language models (LLMs).
           <br />
+
           <br />
-          I contributed to business solutions by developing a{" "}
-          <em>C# Web API</em>, implementing core business software updates,
-          customizing engine configuration files based on customer requirements,
-          and conducting testing.
+          Before transitioning into web development, I spent 7 years as an Electronics Technician in the <strong>live event</strong>,{" "}  
+          <strong>automotive</strong>, <strong>marine</strong>, and <strong>aerospace</strong> industries. This experience fueleld my <strong>passion for problem-solving</strong>,{" "}
+          <strong>continuous learning</strong>, driving my shift into web development.
           <br />
+
           <br />
           I’m currently seeking my next opportunity as a{" "}
           <strong>Front-End</strong> or <strong>Full-Stack Developer</strong>.
