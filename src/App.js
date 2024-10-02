@@ -4,7 +4,6 @@ import Navbar from "./Components/NavBar/navBar.js";
 import ContactForm from "./Components/ContactForm/contactForm.js";
 import ProjectCards from "./Components/ProjectCards/projectCards.js";
 import ContactLinks from "./Components/ContactLinks/contactLinks.js";
-
 import ProfilePic from "./Assets/profilePic.png";
 import PokemonLogo from "./Assets/pokemonLogo.png";
 import ImagineriumLogo from "./Assets/imagineriumLogo.png";
@@ -111,7 +110,7 @@ function App() {
         </div>
       </section>
         <footer>
-          <p id="footer-text">© 2024 Andrés Espín</p>
+          <p id="footer-text">© 2024 Andrés Martínez</p>
           <a
             id="footer-repo-link"
             href="https://github.com/andres3m/personal-website"
