@@ -31,7 +31,7 @@ function App() {
               &lt; Full Stack Developer /&gt;
             </h1>
             <p id="job-title">
-            Leveraging 7+ years of experience in tech,<br /> 
+            Leveraging 9 years of experience in tech,<br /> 
             I transitioned from hardware maintenance to software development, combining hands-on technical expertise with newly acquired coding skills to create software solutions to complex problems.
             </p>
             <button id="contact-button" onClick={scrollToContact}>
@@ -44,7 +44,7 @@ function App() {
       <section id="about" ref={(el) => (sectionRefs.current[1] = el)}>
         <h1>About</h1>
         <p id="about-p">
-          I'm a bilingual <strong>Full Stack Developer</strong> based in Birmingham, UK, with two years of experience building from static websites to full-stack applications, primarily using JavaScript, Typescript, React, and Node.js.
+          I'm a bilingual (Spanish and English speaker) <strong>Full Stack Developer</strong> based in Birmingham, UK, with two years of experience building from static websites to full-stack applications, primarily using JavaScript, Typescript, React, and Node.js.
           <br />
           
           <br />

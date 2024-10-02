@@ -166,8 +166,8 @@ footer {
   justify-content: center;
   width: 170px;
   padding: 0.7rem;
-  background-color: #080708;
-  color: #fff;
+  background-color: #f5b400;
+  color: #000000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -177,8 +177,7 @@ footer {
 }
 
 #contact-button:hover {
-  background-color: #0056b3;
-  color: #ffffff;
+  background-color: #FDCA40;  
 }
 
 @media (max-width: 680px) { 
