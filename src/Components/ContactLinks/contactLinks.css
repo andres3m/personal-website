@@ -88,6 +88,10 @@ div > a {
     margin-left: 0%;
   }
 
+  .email-tooltip{
+    left: -185%;
+  }
+
   .contact-links-logo {
     max-width: 5%;
     border: none;
