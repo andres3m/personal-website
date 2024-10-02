@@ -1,5 +1,5 @@
 import "./contactLinks.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import LinkedinLogo from "../../Assets/linkedinLogo.png";
 import GitHubLogo from "../../Assets/githubLogo.png";
 import XLogo from "../../Assets/xLogo.png";
