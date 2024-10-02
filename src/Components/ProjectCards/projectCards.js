@@ -14,7 +14,7 @@ const ProjectCards = ({ items }) => {
               Demo
             </a>
             <a href={item.repoLink} className="project-link" target="_blank" rel="noopener noreferrer">
-              Repo
+              Code
             </a>
             </div>
           </div>

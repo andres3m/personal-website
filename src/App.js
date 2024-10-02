@@ -63,7 +63,7 @@ function App() {
             </h1>
             <p id="job-title">
             Leveraging 7+ years of experience in tech,<br /> 
-            I transitioned from electronics to software development, combining hands-on technical expertise with newly acquired coding skills to create software solutions to complex problems.
+            I transitioned from hardware maintenance to software development, combining hands-on technical expertise with newly acquired coding skills to create software solutions to complex problems.
             </p>
             <button id="contact-button" onClick={scrollToContact}>
               Contact me
