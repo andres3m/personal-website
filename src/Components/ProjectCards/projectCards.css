@@ -88,3 +88,13 @@
     text-wrap: balance;
   }
   
+  .badges-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;;
+  }
+
+  .badge{
+    margin: 1%;
+  }
