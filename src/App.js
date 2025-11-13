@@ -6,6 +6,7 @@ import ProjectCards from "./Components/ProjectCards/projectCards.js";
 import ContactLinks from "./Components/ContactLinks/contactLinks.js";
 import { ProjectItems } from "./ProjectsData/ProjectsData.js";
 import ProfilePic from "./Assets/profilePic.png";
+import moment from "moment"
 
 function App() {
   const sectionRefs = useRef([]);
@@ -44,12 +45,17 @@ function App() {
       <section id="about" ref={(el) => (sectionRefs.current[1] = el)}>
         <h1>About</h1>
         <p id="about-p">
-          I'm a bilingual (Spanish and English speaker) <strong>Full Stack Developer</strong> based in Birmingham, UK, with two years of experience building from static websites to full-stack applications, primarily using JavaScript, Typescript, React, and Node.js.
+          I'm a bilingual (Spanish and English speaker) <strong>Full Stack Developer</strong> based in Birmingham, UK, with <strong>three years of experience</strong> building from static websites to full-stack applications, primarily using <strong>JavaScript, Typescript, React, and Node.js.</strong>
+          <br />
+
+          <br />
+          My most recent experience includes working as a{" "}
+          <strong>Full-stack Developer</strong>, where I contributed to build a SaaS web application using <strong>Next.js and TypeScript</strong>. My role involved enabling customers to book maintenance services, integrating digital document signing, and implementing direct-debit payment setup, delivering a seamless end-to-end user experience.
           <br />
           
           <br />
-          My most recent experience includes working as{" "}
-          <strong>Back-end Developer</strong>, where I implemented key software updates in .NET and C#. My role involved creating Web APIs, customizing engine configuration files to meet customer requirements, and handling testing and deployments using Azure DevOps with hosting on AWS.
+          Before that, I worked as a{" "}
+          <strong>Back-end Developer</strong>, where I contributed to the implementation of core <strong>.NET and C#</strong> systems by developing Web APIs, tailoring engine configuration files to align with client needs, and overseeing testing and deployment processes through <strong>Azure DevOps and AWS</strong>.
           <br />
 
           <br />
@@ -63,8 +69,8 @@ function App() {
           <br />
 
           <br />
-          I’m currently seeking my next opportunity as a{" "}
-          <strong>Front-End</strong> or <strong>Full-Stack Developer</strong>.
+          I’m currently seeking my next opportunity as {" "}
+         <strong>Full-Stack Developer</strong>.
           Feel free to explore my portfolio and reach out if you’re interested
           in my work!
         </p>      
@@ -80,7 +86,7 @@ function App() {
         </div>
       </section>
         <footer>
-          <p id="footer-text">© 2024 Andrés Martínez</p>
+          <p id="footer-text">© {moment().format('YYYY')} Andrés Martínez</p>
           <a
             id="footer-repo-link"
             href="https://github.com/andres3m/personal-website"
