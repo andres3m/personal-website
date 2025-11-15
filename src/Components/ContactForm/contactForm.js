@@ -22,7 +22,7 @@ const ContactForm = () => {
 
         emailjs.send('service_bf5ll1m', 'template_fdvdjn8', formData, 'QD_q3sGt_le202mDG')
             .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
+                // console.log('SUCCESS!', response.status, response.text);
                 alert("Email sent!!")
                 // Reset form after successful submission
                 setFormData({
@@ -33,7 +33,7 @@ const ContactForm = () => {
                 });
             },                                 
             (err) => {
-                console.log('FAILED...', err);
+                // console.log('FAILED...', err);
             });
     };
 
