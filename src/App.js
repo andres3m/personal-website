@@ -33,7 +33,7 @@ function App() {
             </h1>
             <p id="job-title">
             Leveraging 9 years of experience in tech,<br /> 
-            I transitioned from hardware maintenance to software development, combining hands-on technical expertise with newly acquired coding skills to create software solutions to complex problems.
+            I transitioned from hardware electronics to software development, combining hands-on technical expertise with newly acquired coding skills to create software solutions to complex problems.
             </p>
             <button id="contact-button" onClick={scrollToContact}>
               Contact me
@@ -63,7 +63,7 @@ function App() {
           <br />
 
           <br />
-          Before transitioning into web development, I spent 7 years as an Electronics Technician in the <strong>live event</strong>,{" "}  
+          Before transitioning into web development, I spent 7 years as Electronics Technician in the <strong>live event</strong>,{" "}  
           <strong>automotive</strong>, <strong>marine</strong>, and <strong>aerospace</strong> industries. This experience fueleld my <strong>passion for problem-solving</strong>,{" "}
           <strong>continuous learning</strong>, driving my shift into web development.
           <br />
